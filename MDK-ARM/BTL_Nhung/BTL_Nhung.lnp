@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"btl_nhung\startup_stm32f103xb.o"
+"btl_nhung\main.o"
+"btl_nhung\stm32f1xx_it.o"
+"btl_nhung\stm32f1xx_hal_msp.o"
+"btl_nhung\i2c.o"
+"btl_nhung\i2c_lcd.o"
+"btl_nhung\stm32f1xx_hal_gpio_ex.o"
+"btl_nhung\stm32f1xx_hal_tim.o"
+"btl_nhung\stm32f1xx_hal_tim_ex.o"
+"btl_nhung\stm32f1xx_hal.o"
+"btl_nhung\stm32f1xx_hal_rcc.o"
+"btl_nhung\stm32f1xx_hal_rcc_ex.o"
+"btl_nhung\stm32f1xx_hal_gpio.o"
+"btl_nhung\stm32f1xx_hal_dma.o"
+"btl_nhung\stm32f1xx_hal_cortex.o"
+"btl_nhung\stm32f1xx_hal_pwr.o"
+"btl_nhung\stm32f1xx_hal_flash.o"
+"btl_nhung\stm32f1xx_hal_flash_ex.o"
+"btl_nhung\stm32f1xx_hal_exti.o"
+"btl_nhung\system_stm32f1xx.o"
+--strict --scatter "BTL_Nhung\BTL_Nhung.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BTL_Nhung.map" -o BTL_Nhung\BTL_Nhung.axf
